@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Tip Top</string>
+
+    <string name="tiptop">Tip Top</string>
+    <string name="start_game">Новая Игра</string>
+    <string name="new_game">Новая \nИгра</string>
+    <string name="task_fragment">Задания</string>
+    <string name="task_header">Выбор задания</string>
+    <string name="all_tasks_header">Все задания</string>
+    <string name="selected_numbers">Выбранные номера</string>
+    <string name="numbers">0</string>
+    <string name="round">Раунд</string>
+
+    <string name="dialog_task_title">Ваше задание на этот круг:</string>
+    <string name="dialog_win_title">Поздравляю, вы победили!</string>
+    <string name="dialog_win">Вы сыграли все раунды и у вас ещё остались Единороги!</string>
+    <string name="dialog_loss_title">К сожалению, вы проиграли!</string>
+    <string name="dialog_loss">У вас не осталось больше Единорогов</string>
+    <string name="dialog_round_end_title">Вы завершили раунд</string>
+    <string name="dialog_round_end">Нажмите «Продолжить» чтобы выбрать задание для следующего раунда</string>
+    <string name="dialog_round_end_button">Продолжить</string>
+
+
+    <string name="information_fragment">Информация</string>
+    <string name="change_task">Выбрать другое</string>
+    <string name="change">Поменять</string>
+    <string name="start_round">Начать раунд</string>
+    <string name="match_cards">Количество карт равно игрокам</string>
+    <string name="task_placeholder">Задание</string>
+    <string name="show_task">Показать задание</string>
+    <string name="end_round">Завершить раунд</string>
+    <string name="go_to_home">На главную</string>
+    <string name="no_more_tasks">Задания закончились</string>
+
+    <string name="function_unavailable">Эта функция недоступна</string>
+
+
+</resources>

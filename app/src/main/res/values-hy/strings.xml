@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Հուշում վերև</string>
+
+    <string name="tiptop">Հուշում վերև</string>
+    <string name="start_game">Նոր խաղ</string>
+    <string name="new_game">Նոր խաղ</string>
+    <string name="task_fragment">Առաջադրանքներ</string>
+    <string name="task_header">Առաջադրանքի ընտրություն</string>
+    <string name="all_tasks_header">Բոլոր առաջադրանքները</string>
+    <string name="selected_numbers">Ընտրված թվեր</string>
+    <string name="numbers">0</string>
+    <string name="round">Կլոր</string>
+
+    <string name="dialog_task_title">Ձեր առաջադրանքն այս փուլի համար.</string>
+    <string name="dialog_win_title">Շնորհավորում եմ, դուք հաղթեցիք:</string>
+    <string name="dialog_win">Բոլոր ռաունդներն ավարտված են, և դուք դեռ ունեք միաեղջյուրներ:</string>
+    <string name="dialog_loss_title">Ցավոք, դու պարտվեցիր:</string>
+    <string name="dialog_loss">Դուք այլևս միաեղջյուրներ չեք մնացել</string>
+    <string name="dialog_round_end_title">Փուլն ավարտված է</string>
+    <string name="dialog_round_end">Սեղմեք «Շարունակել» հաջորդ փուլի համար նոր առաջադրանք ընտրելու համար</string>
+    <string name="dialog_round_end_button">Շարունակել</string>
+
+    <string name="information_fragment">Տեղեկություն</string>
+    <string name="change_task">Ընտրեք մեկ ուրիշը</string>
+    <string name="change">Փոխել</string>
+    <string name="start_round">Սկսել փուլը</string>
+    <string name="match_cards">Համապատասխանեցրեք քարտերի քանակը խաղացողներին</string>
+    <string name="task_placeholder">Առաջադրանքը գնում է այստեղ</string>
+    <string name="show_task">Ցույց տալ առաջադրանքը</string>
+    <string name="end_round">Վերջ փուլ</string>
+    <string name="go_to_home">Տուն</string>
+    <string name="no_more_tasks">Այլևս ցուցադրելու առաջադրանքներ չկան</string>
+
+    <string name="function_unavailable">Այս ֆունկցիան անհասանելի է</string>
+</resources>

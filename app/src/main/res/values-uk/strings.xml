@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tip Top</string>
+
+    <string name="tiptop">Tip Top</string>
+    <string name="start_game">Нова гра</string>
+    <string name="new_game">Нова гра</string>
+    <string name="task_fragment">Завдання</string>
+    <string name="task_header">Вибір завдання</string>
+    <string name="all_tasks_header">Усі завдання</string>
+    <string name="selected_numbers">Вибрані числа</string>
+    <string name="numbers">0</string>
+    <string name="round">Круглий</string>
+
+    <string name="dialog_task_title">Ваше завдання на цей раунд:</string>
+    <string name="dialog_win_title">Вітаємо, ви виграли!</string>
+    <string name="dialog_win">Усі раунди завершено, і у вас ще залишилися єдинороги!</string>
+    <string name="dialog_loss_title">На жаль, ви програли!</string>
+    <string name="dialog_loss">У вас більше не залишилося Єдинорогів</string>
+    <string name="dialog_round_end_title">Раунд завершено</string>
+    <string name="dialog_round_end">Натисніть «Продовжити», щоб вибрати нове завдання для наступного раунду</string>
+    <string name="dialog_round_end_button">Продовжити</string>
+
+    <string name="information_fragment">Інформація</string>
+    <string name="change_task">Виберіть інший</string>
+    <string name="change">Змінити</string>
+    <string name="start_round">Почати раунд</string>
+    <string name="match_cards">Відповідність кількості карток гравцям</string>
+    <string name="task_placeholder">Сюди йде завдання</string>
+    <string name="show_task">Показати завдання</string>
+    <string name="end_round">Закінчити раунд</string>
+    <string name="go_to_home">Додому</string>
+    <string name="no_more_tasks">Більше немає завдань для показу</string>
+
+    <string name="function_unavailable">Ця функція недоступна</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="120dp"
+    android:paddingHorizontal="60dp"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo_top_ten_2"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/start_new_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        style="@style/my_button_2"
+        android:background="@drawable/button_boarder"
+        android:text="@string/start_game"
+        />
+
+    <Button
+        android:id="@+id/btn_go_to_task_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        style="@style/my_button_2"
+        android:background="@drawable/button_boarder"
+        android:text="@string/task_fragment"
+        />
+
+    <Button
+        android:id="@+id/btn_go_to_information_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        style="@style/my_button_2"
+        android:background="@drawable/button_boarder"
+        android:text="@string/information_fragment"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/en_flag"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_eng"/>
+
+        <ImageView
+            android:id="@+id/ru_flag"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_flag_ru"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

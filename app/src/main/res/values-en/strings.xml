@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Tip Top</string>
+
+    <string name="tiptop">Tip Top</string>
+    <string name="start_game">New Game</string>
+    <string name="new_game">New Game</string>
+    <string name="task_fragment">Tasks</string>
+    <string name="task_header">Task Selection</string>
+    <string name="all_tasks_header">All Tasks</string>
+    <string name="selected_numbers">Chosen numbers</string>
+    <string name="numbers">0</string>
+    <string name="round">Round</string>
+
+    <string name="dialog_task_title">Your task for this round:</string>
+    <string name="dialog_win_title">Congratulations, you won!</string>
+    <string name="dialog_win">All rounds are finished and you still have Unicorns left!</string>
+    <string name="dialog_loss_title">Unfortunately, you lost!</string>
+    <string name="dialog_loss">You have no more Unicorns left</string>
+    <string name="dialog_round_end_title">Round is finished</string>
+    <string name="dialog_round_end">Press «Continue» to choose new task for the next round</string>
+    <string name="dialog_round_end_button">Continue</string>
+
+    <string name="information_fragment">Information</string>
+    <string name="change_task">Select another</string>
+    <string name="change">Change</string>
+    <string name="start_round">Start Round</string>
+    <string name="match_cards">Match the number of cards to players</string>
+    <string name="task_placeholder">Task goes here</string>
+    <string name="show_task">Show Task</string>
+    <string name="end_round">End Round</string>
+    <string name="go_to_home">To Home</string>
+    <string name="no_more_tasks">No more tasks to show</string>
+
+    <string name="function_unavailable">This function is unavailable</string>
+
+</resources>
