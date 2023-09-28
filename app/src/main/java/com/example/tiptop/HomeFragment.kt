@@ -6,76 +6,58 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.tiptop.databinding.FragmentHomeBinding
 import java.util.*
 
-
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     private val viewModel: GameViewModel by activityViewModels()
-    // Create a ViewModel the first time the fragment is created.
-    // If the fragment is re-created, it receives the same GameViewModel instance created by the
-    // first fragment
 
     // Variable for changing the display language
-    lateinit var locale: Locale
-
+    private lateinit var locale: Locale
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-
-        //Set display language to Russian
-        //setLocale("ru")
-
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Handle "Start New Game" button click
         binding.startNewGame.setOnClickListener {
-            //findNavController().navigate(R.id.action_homeFragment_to_playersFragment)
             findNavController().navigate(R.id.action_homeFragment_to_taskFragment)
         }
 
+        // Handle "Go to Tasks" button click
         binding.btnGoToTaskFragment.setOnClickListener {
             viewModel.shuffleTaskList()
             findNavController().navigate(R.id.action_homeFragment_to_allTasksFragment)
         }
 
+        // Handle "Go to Information" button click
         binding.btnGoToInformationFragment.setOnClickListener {
-
-            //findNavController().navigate(R.id.action_homeFragment_to_settingsFragment)
             Toast.makeText(activity, getString(R.string.function_unavailable), Toast.LENGTH_SHORT).show()
-            //val toast = Toast.makeText(this, "ЭТА ФУНКЦИЯ ВРЕМЕННО НЕДОСТУПНА :P", Toast.LENGTH_SHORT)
-            //val v = toast.view.findViewById<View>(android.R.id.message) as TextView
-            //v.gravity = Gravity.CENTER
-            //toast.show()
-
         }
 
+        // Reinitialize data when the fragment is created
         viewModel.reinitializeData()
 
-
-        //Change the language
-        binding.ruFlag.setOnClickListener{
+        // Change the language to Russian
+        binding.ruFlag.setOnClickListener {
             setLocale("ru")
         }
-        binding.enFlag.setOnClickListener{
+
+        // Change the language to English
+        binding.enFlag.setOnClickListener {
             setLocale("en")
         }
     }
@@ -85,11 +67,8 @@ class HomeFragment : Fragment() {
         _binding = null
     }
 
-
-    //private fun checkLocale(local)
-    //Function for changing the language
+    // Function for changing the display language
     private fun setLocale(localeName: String) {
-
         locale = Locale(localeName)
         val res = resources
         val dm = res.displayMetrics
@@ -97,25 +76,10 @@ class HomeFragment : Fragment() {
         conf.setLocale(locale)
         res.updateConfiguration(conf, dm)
 
+        // Notify the ViewModel about the language change
         viewModel.changeLanguage(localeName)
 
-        activity?.recreate();
-        //setLocale("ru")
-
-        //getFragmentManager()?.beginTransaction()?.detach(this)?.attach(this)?.commit();
-
-        //fragmentManager!!.beginTransaction().detach(this).attach(this).commit()
-
-       /* val refresh = Intent(
-            this,
-            MainActivity::class.java
-        )
-        startActivity(refresh);
-        overridePendingTransition( 0, 0);
-        refresh.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        finish(); */
+        // Recreate the activity to apply language changes
+        activity?.recreate()
     }
-
-
-
 }

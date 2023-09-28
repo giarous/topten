@@ -13,56 +13,49 @@ import androidx.navigation.fragment.findNavController
 import com.example.tiptop.databinding.FragmentAllTasksBinding
 import com.example.tiptop.databinding.FragmentTaskBinding
 
-
 class AllTasksFragment : Fragment() {
 
-
     private var _binding: FragmentAllTasksBinding? = null
-
     private var taskCounter = 0
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    // This property is only valid between onCreateView and onDestroyView.
     private val binding get() = _binding!!
 
+    // Access the shared ViewModel from the activity
     private val viewModel: GameViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         _binding = FragmentAllTasksBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
+        // Set the text for task 1 and task 2 using HTML content from the ViewModel
         binding.tvTask1.text = Html.fromHtml(viewModel.taskList[taskCounter])
-        binding.tvTask2.text = Html.fromHtml(viewModel.taskList[taskCounter+1])
+        binding.tvTask2.text = Html.fromHtml(viewModel.taskList[taskCounter + 1])
 
-
+        // Handle "Change Tasks" button click
         binding.btnChangeTasks.setOnClickListener {
-            if(taskCounter<viewModel.taskList.size-3){
-                taskCounter+=2
+            if (taskCounter < viewModel.taskList.size - 3) {
+                taskCounter += 2
                 setTextSize()
                 binding.tvTask1.text = Html.fromHtml(viewModel.taskList[taskCounter])
-                binding.tvTask2.text = Html.fromHtml(viewModel.taskList[taskCounter+1])
-            }
-            else{
+                binding.tvTask2.text = Html.fromHtml(viewModel.taskList[taskCounter + 1])
+            } else {
                 Toast.makeText(activity, getString(R.string.no_more_tasks), Toast.LENGTH_SHORT).show()
             }
         }
 
-
+        // Handle "New Game" button click
         binding.btnNewGame.setOnClickListener {
             findNavController().navigate(R.id.action_allTasksFragment_to_homeFragment)
             //viewModel.reinitializeData()
         }
-
     }
 
     override fun onDestroyView() {
@@ -70,14 +63,14 @@ class AllTasksFragment : Fragment() {
         _binding = null
     }
 
-    private fun setTextSize(){
-        if(viewModel.taskList[taskCounter].length < 150) binding.tvTask1.textSize = 16F
-        else if (viewModel.taskList[taskCounter].length<250) binding.tvTask1.textSize = 14F
+    // Function to adjust text size based on task length
+    private fun setTextSize() {
+        if (viewModel.taskList[taskCounter].length < 150) binding.tvTask1.textSize = 16F
+        else if (viewModel.taskList[taskCounter].length < 250) binding.tvTask1.textSize = 14F
         else binding.tvTask1.textSize = 12F
 
-        if(viewModel.taskList[taskCounter+1].length < 150) binding.tvTask2.textSize = 16F
-        else if (viewModel.taskList[taskCounter+1].length<250) binding.tvTask2.textSize = 14F
+        if (viewModel.taskList[taskCounter + 1].length < 150) binding.tvTask2.textSize = 16F
+        else if (viewModel.taskList[taskCounter + 1].length < 250) binding.tvTask2.textSize = 14F
         else binding.tvTask2.textSize = 12F
     }
-
 }
