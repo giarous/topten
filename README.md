@@ -3,7 +3,7 @@
 
  <img align="right" alt="Logo" width="30%" src="./app/src/main/res/drawable/logo_top_ten_2.png"/>
  <p align="left">
-   This Android mobile app brings the classic game of 'Rock Paper Scissors' to life. Created as a personal project, it was designed for entertainment and as a       learning experience in implementing Bluetooth functionality on Android devices.
+A mobile app based on a board game with the same name and which serves as a virtual inventory replacement for the physical components of that game, including cards, chips, and the board. Additionally, it assists in calculating winning points.
  </p> 
 </div>
 
