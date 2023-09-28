@@ -12,12 +12,12 @@ This app is a tribute to the original game and is not affiliated with or endorse
 
 ### 🎨 Color Reference
 
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
+| Color        | Hex                                                                    |
+|--------------|------------------------------------------------------------------------|
+| Teal 200     | ![#FF03DAC5](https://via.placeholder.com/10/0a192f?text=+) `#FF03DAC5` |
+| Teal 700     | ![#FF018786](https://via.placeholder.com/10/0a192f?text=+) `#FF018786` |
+| Background   | ![#FF047488](https://via.placeholder.com/10/303C55?text=+) `#FF047488` |
+| Top Ten Dark | ![#FF334C53](https://via.placeholder.com/10/8892b0?text=+) `#FF334C53` |
 
 
 ### Screenshots
