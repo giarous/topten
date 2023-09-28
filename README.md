@@ -7,7 +7,10 @@
  </p> 
 </div>
 
-## 🎨 Color Reference
+##Disclaimer
+This app is a tribute to the original game and is not affiliated with or endorsed by "Interlude" or "TOP TEN". All associated copyrights and trademarks belong to their respective owners. The physical version with full set of tasks can be found [on their website](https://www.cocktailgames.com/en/game/top-ten/)
+
+### 🎨 Color Reference
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
