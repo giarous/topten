@@ -7,7 +7,17 @@
  </p> 
 </div>
 
-## Screenshots
+## 🎨 Color Reference
+
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
+| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
+| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
+| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
+
+
+### Screenshots
 
 [![tip-top-demo-transparrent.png](https://i.postimg.cc/HkfY6WMV/tip-top-demo-transparrent.png)](https://postimg.cc/gxHbJWNW)
 
