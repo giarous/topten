@@ -1,7 +1,7 @@
 # Top Ten
 <div align="center" height="40px">
 
- <img align="right" alt="Logo" width="20%" src="./app/src/main/res/drawable/logo_top_ten_2.png"/>
+ <img align="right" alt="Logo" width="30%" src="./app/src/main/res/drawable/logo_top_ten_2.png"/>
  <p align="left">
    This Android mobile app brings the classic game of 'Rock Paper Scissors' to life. Created as a personal project, it was designed for entertainment and as a       learning experience in implementing Bluetooth functionality on Android devices.
  </p> 
