@@ -9,7 +9,7 @@
 
 ## Screenshots
 
-[![RPS-Screenshots.png](https://i.postimg.cc/vZKhD13j/RPS-Screenshots.png)](https://postimg.cc/DSqLMzVd)
+[![tip-top-demo-transparrent.png](https://i.postimg.cc/HkfY6WMV/tip-top-demo-transparrent.png)](https://postimg.cc/gxHbJWNW)
 
 ### Instructions
 
